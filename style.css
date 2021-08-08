@@ -375,6 +375,15 @@ p {
 #projects .project-info p {
   color: white;
 }
+#projects .project-info a {
+  color: crimson;
+  border: #29323c solid;
+  font-size: large;
+  margin: 1rem;
+  display:inline-block;
+  width: 20rem;
+  text-align: center;
+}
 #projects .project-img {
   flex-basis: 50%;
   height: 300px;
@@ -420,8 +429,27 @@ p {
   letter-spacing: 0.2rem;
   margin-bottom: 10px;
 }
-#about .col-right p {
+#about .col-right .info {
   margin-bottom: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  flex-direction: column;
+}
+#about .col-right .info .info-section-wraper{
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+#about .col-right .info .info-section{
+  /* border: 5px #0000002c solid; */
+  width: max-content;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+#about .col-right .info ul{
+  margin: 20px;
+  font-size: 1.3rem;
 }
 #about .col-right .cta {
   color: black;
@@ -501,6 +529,11 @@ p {
   flex-direction: column;
   padding-top: 50px;
   padding-bottom: 10px;
+}
+#footer .footer.container p span {
+  color: crimson;
+  font-size: larger;
+  font-weight: bold;
 }
 #footer h2 {
   color: white;
@@ -694,7 +727,10 @@ p {
     display: none;
   }
   /* End header */
-
+  #about .col-right .info .info-section-wraper{
+    display: flex;
+    flex-direction: row;
+  }
   #services .service-bottom .service-item {
     flex-basis: 22%;
     margin: 1.5%;
