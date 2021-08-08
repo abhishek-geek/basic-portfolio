@@ -439,6 +439,8 @@ p {
   display: flex;
   flex-direction: column;
   /* align-items: center; */
+  flex-wrap: wrap;
+  align-content: center;
 }
 #about .col-right .info .info-section{
   /* border: 5px #0000002c solid; */
@@ -450,6 +452,7 @@ p {
 #about .col-right .info ul{
   margin: 20px;
   font-size: 1.3rem;
+  list-style: none;
 }
 #about .col-right .cta {
   color: black;
