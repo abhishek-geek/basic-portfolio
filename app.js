@@ -9,12 +9,9 @@ hero = document.getElementById('loaded');
 window.addEventListener('load', ()=>{
 	console.log("loading");
 	loader.classList.remove("loading");
-	hero.setAttribute("id", "hero");
+	loader.classList.add("bg");
+	hero.setAttribute("id", "hero");``
 })
-// $(window).load(function() {
-// 	// Animate loader off screen
-// 	$(".se-pre-con").fadeOut("slow");;
-// });
 
 
 hamburger.addEventListener('click', () => {
